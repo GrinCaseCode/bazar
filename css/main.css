@@ -4,7 +4,7 @@
 }
 *:-moz-placeholder {
 	color: #302e2e;
-	opacity: 1;
+	opacity: 1; 
 }
 *::-moz-placeholder {
 	color: #302e2e;
@@ -138,6 +138,25 @@ align-items: center;
 justify-content: center;
 margin-right: 15px;
 font-size: 16px;
+position: relative;
+z-index: 1;
+}
+.btn-phone::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+	transition: all  0.3s;
+	border-radius: 50%;
+	background-color: #fd531d;
+}
+.phone-main:hover .btn-phone::after {
+	opacity: 1;
 }
 .btn-social {
 	width: 33px;
@@ -321,6 +340,10 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: 17px auto;
 border-radius: 50%;
+transition: all 0.3s;
+}
+.block-video:hover::before {
+	transform: scale(1.05);
 }
 .billbord .block-video {
 	margin-top: 60px;
