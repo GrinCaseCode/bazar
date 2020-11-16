@@ -411,6 +411,9 @@
     .container {
         max-width: 100%;
     }
+    .slider-investion__image {
+        display: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -503,6 +506,12 @@
 }
 .billbord {
     padding-top: 25px;
+}
+.bottom-slider {
+    padding-right: 124px;
+}
+.slider-count {
+    width: 80px;
 }
 }
 
